@@ -10,6 +10,7 @@ import Main from './layout/Main';
 import Friend from './Components/Friends/Friend';
 import FreindDetails from './Components/FrienddetAILS/FreindDetails';
 import Post from './Components/Post/Post';
+import PostDetails from './Components/PostDetails/PostDetails';
 
 function App() {
 
@@ -60,6 +61,17 @@ function App() {
           return fetch(`https://jsonplaceholder.typicode.com/posts`)
         },
         element:<Post></Post>
+        
+      },
+
+      {
+
+        path:'/post/:postId',
+
+        loader:async({params}) => {
+          return fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
+        },
+        element: <PostDetails></PostDetails>
         
       }
 

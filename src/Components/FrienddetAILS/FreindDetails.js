@@ -11,6 +11,8 @@ const FreindDetails = () => {
 
      <h2>Details About : {friend.name}</h2>
      <p>call her : {friend.phone}</p>
+
+   
     
         </div>
     );
