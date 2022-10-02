@@ -7,7 +7,10 @@ const Header = () => {
         <div className='header'>
           <Link to='/home'> Home</Link>
           <Link to='/about'> About</Link>
-            <a href='/products'>product</a>
+          <Link to='/post'> post</Link>
+
+
+             <a href='/products'>product</a>
             <a href='/friends'>friends</a>
 
         </div>
